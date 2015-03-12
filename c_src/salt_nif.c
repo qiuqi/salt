@@ -79,7 +79,7 @@ typedef ErlNifPid 		nif_pid_t;
 #define SALT_VSN(maj, min, rev) 	(((maj) << 16) | ((min) << 8) | (rev))
 
 /* Restrict processing latency by imposing payload size limit. */
-#define SALT_MAX_MESSAGE_SIZE 		(16*1024)
+#define SALT_MAX_MESSAGE_SIZE 		(10*1024*1024)
 /* XXX Measure how long crypto_[secret]box[_open] take for this size, roughly? */
 /* XXX We want these calls to be equivalent to the default 1 reduction charged per NIF call */
 
