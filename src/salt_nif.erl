@@ -43,7 +43,7 @@
 -export([salt_random_bytes/4]).
 
 -define(APPNAME, salt_nif).
--define(LIBNAME, salt_nif).
+-define(LIBNAME, salt).
 
 %%%
 
