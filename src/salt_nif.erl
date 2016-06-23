@@ -42,13 +42,10 @@
 -export([salt_hash/1, salt_verify_16/2, salt_verify_32/2]).
 -export([salt_random_bytes/4]).
 
--define(APPNAME, salt_nif).
--define(LIBNAME, salt).
-
 %%%
 
 load() ->
-    Path = filename:join([code:priv_dir(salt),"salt_nif"]),
+    Path = filename:join([code:priv_dir(salt),"salt"]),
     erlang:load_nif(Path, 0).
 
 %%% Exported from salt_nif.c.
